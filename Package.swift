@@ -22,7 +22,8 @@ let package = Package(
     targets: [
         .target(
             name: "GirdersSwift",
-            dependencies: ["SwiftyBeaver", "PromiseKit", "KeychainAccess"]),
+            dependencies: ["SwiftyBeaver", "PromiseKit", "KeychainAccess"],
+            exclude: ["../../Tests/GirdersSwiftTests/resources"]),
         .binaryTarget(
             name: "GRSecurity",
             path: "Sources/GRSecurity.xcframework"
